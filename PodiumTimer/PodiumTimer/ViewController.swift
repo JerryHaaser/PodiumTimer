@@ -11,10 +11,8 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var iMinuteLabel: UILabel!
-    @IBOutlet weak var iTensSecondLabel: UILabel!
     @IBOutlet weak var iSecondLabel: UILabel!
     @IBOutlet weak var gMinuteLabel: UILabel!
-    @IBOutlet weak var gTensSecondLabel: UILabel!
     @IBOutlet weak var gSecondLabel: UILabel!
     
 
