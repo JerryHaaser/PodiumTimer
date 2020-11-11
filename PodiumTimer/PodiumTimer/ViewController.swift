@@ -9,11 +9,33 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var iMinuteLabel: UILabel!
+    @IBOutlet weak var iTensSecondLabel: UILabel!
+    @IBOutlet weak var iSecondLabel: UILabel!
+    @IBOutlet weak var gMinuteLabel: UILabel!
+    @IBOutlet weak var gTensSecondLabel: UILabel!
+    @IBOutlet weak var gSecondLabel: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func iStartButtonPressed(_ sender: Any) {
+        
+    }
+    @IBAction func iResetButtonPressed(_ sender: Any) {
+        
+    }
+    @IBAction func gStartButtonPressed(_ sender: Any) {
+        
+    }
+    @IBAction func gResetButtonPressed(_ sender: Any) {
+        
+    }
+    
 
 
 }
