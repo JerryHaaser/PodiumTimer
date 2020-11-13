@@ -10,12 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var iMinuteLabel: UILabel!
-    @IBOutlet weak var iSecondLabel: UILabel!
-    @IBOutlet weak var gMinuteLabel: UILabel!
-    @IBOutlet weak var gSecondLabel: UILabel!
+    @IBOutlet weak var individualTimerLabel: UILabel!
+    @IBOutlet weak var groupTimerLabel: UILabel!
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
