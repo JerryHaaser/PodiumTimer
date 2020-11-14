@@ -16,46 +16,46 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EqA-MS-yZh">
-                                <rect key="frame" x="86" y="362" width="34" height="30"/>
+                                <rect key="frame" x="96" y="532" width="34" height="30"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
                                     <action selector="iStartButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I3U-Fl-nC7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1OF-qx-kfF">
-                                <rect key="frame" x="294" y="362" width="34" height="30"/>
+                                <rect key="frame" x="284.5" y="532" width="34" height="30"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
                                     <action selector="gStartButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Paf-tD-z2S"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avm-t4-xnk">
-                                <rect key="frame" x="83.5" y="412" width="39" height="30"/>
+                                <rect key="frame" x="93.5" y="582" width="39" height="30"/>
                                 <state key="normal" title="Reset"/>
                                 <connections>
                                     <action selector="iResetButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZEc-5e-u7Y"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ew9-xQ-yCG">
-                                <rect key="frame" x="20.5" y="236" width="165" height="96"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <rect key="frame" x="20" y="394.5" width="185.5" height="107.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="90"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bif-Fn-bSp">
-                                <rect key="frame" x="228.5" y="236" width="165" height="96"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <rect key="frame" x="209" y="394.5" width="185" height="107.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="90"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="|" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nia-yS-JZR">
-                                <rect key="frame" x="190.5" y="224" width="33" height="120"/>
+                                <rect key="frame" x="190.5" y="388" width="33" height="120"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erc-xL-4GT">
-                                <rect key="frame" x="291.5" y="412" width="39" height="30"/>
+                                <rect key="frame" x="282" y="582" width="39" height="30"/>
                                 <state key="normal" title="Reset"/>
                                 <connections>
                                     <action selector="gResetButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ev8-lA-YWs"/>
@@ -64,20 +64,20 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="EqA-MS-yZh" firstAttribute="centerX" secondItem="avm-t4-xnk" secondAttribute="centerX" id="0ce-B5-Au1"/>
-                            <constraint firstItem="Bif-Fn-bSp" firstAttribute="baseline" secondItem="ew9-xQ-yCG" secondAttribute="baseline" id="5v4-aw-ShE"/>
-                            <constraint firstItem="1OF-qx-kfF" firstAttribute="baseline" secondItem="EqA-MS-yZh" secondAttribute="baseline" id="8vw-eY-HL8"/>
-                            <constraint firstItem="EqA-MS-yZh" firstAttribute="centerX" secondItem="ew9-xQ-yCG" secondAttribute="centerX" id="CNK-bK-nmh"/>
-                            <constraint firstItem="erc-xL-4GT" firstAttribute="centerX" secondItem="1OF-qx-kfF" secondAttribute="centerX" id="Rqw-ZS-yhB"/>
-                            <constraint firstItem="1OF-qx-kfF" firstAttribute="top" secondItem="Bif-Fn-bSp" secondAttribute="bottom" constant="30" id="W9J-HA-POF"/>
-                            <constraint firstItem="erc-xL-4GT" firstAttribute="top" secondItem="1OF-qx-kfF" secondAttribute="bottom" constant="20" id="WNv-pz-1wz"/>
-                            <constraint firstItem="avm-t4-xnk" firstAttribute="top" secondItem="EqA-MS-yZh" secondAttribute="bottom" constant="20" id="iKj-WH-J4e"/>
-                            <constraint firstItem="Bif-Fn-bSp" firstAttribute="leading" secondItem="nia-yS-JZR" secondAttribute="trailing" constant="5" id="o3p-aW-MyC"/>
-                            <constraint firstItem="Bif-Fn-bSp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="192" id="pkI-N6-Tk2"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bif-Fn-bSp" secondAttribute="trailing" constant="20.5" id="qT3-mN-f2b"/>
-                            <constraint firstItem="1OF-qx-kfF" firstAttribute="centerX" secondItem="Bif-Fn-bSp" secondAttribute="centerX" id="tCC-NY-zGt"/>
-                            <constraint firstItem="Bif-Fn-bSp" firstAttribute="centerY" secondItem="nia-yS-JZR" secondAttribute="centerY" id="vkN-mY-M9i"/>
-                            <constraint firstItem="EqA-MS-yZh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="86" id="ySv-dh-ecx"/>
+                            <constraint firstItem="Bif-Fn-bSp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Det-rf-Aee"/>
+                            <constraint firstItem="avm-t4-xnk" firstAttribute="top" secondItem="EqA-MS-yZh" secondAttribute="bottom" constant="20" id="HtZ-vn-ySG"/>
+                            <constraint firstItem="nia-yS-JZR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OPQ-Am-jv0"/>
+                            <constraint firstItem="EqA-MS-yZh" firstAttribute="centerX" secondItem="ew9-xQ-yCG" secondAttribute="centerX" id="RcU-6h-ABc"/>
+                            <constraint firstItem="EqA-MS-yZh" firstAttribute="top" secondItem="ew9-xQ-yCG" secondAttribute="bottom" constant="30" id="U49-nG-jn4"/>
+                            <constraint firstItem="1OF-qx-kfF" firstAttribute="top" secondItem="Bif-Fn-bSp" secondAttribute="bottom" constant="30" id="V7m-v1-JiS"/>
+                            <constraint firstItem="ew9-xQ-yCG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="W7B-4c-G9B"/>
+                            <constraint firstItem="ew9-xQ-yCG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Y9d-zp-RVR"/>
+                            <constraint firstItem="avm-t4-xnk" firstAttribute="centerX" secondItem="EqA-MS-yZh" secondAttribute="centerX" id="daj-JZ-K72"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bif-Fn-bSp" secondAttribute="trailing" constant="20" id="lDg-y0-jiL"/>
+                            <constraint firstItem="erc-xL-4GT" firstAttribute="centerX" secondItem="1OF-qx-kfF" secondAttribute="centerX" id="oFb-IV-AQ9"/>
+                            <constraint firstItem="1OF-qx-kfF" firstAttribute="centerX" secondItem="Bif-Fn-bSp" secondAttribute="centerX" id="rtC-ZI-WGE"/>
+                            <constraint firstItem="erc-xL-4GT" firstAttribute="top" secondItem="1OF-qx-kfF" secondAttribute="bottom" constant="20" id="y4c-tj-Wue"/>
+                            <constraint firstItem="nia-yS-JZR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yFT-eV-ygf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
