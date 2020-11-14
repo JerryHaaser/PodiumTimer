@@ -11,6 +11,7 @@ import AVFoundation
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var logoView: UIImageView!
     @IBOutlet weak var individualTimerLabel: UILabel!
     @IBOutlet weak var groupTimerLabel: UILabel!
     
@@ -19,6 +20,7 @@ class ViewController: UIViewController {
     var timer: Timer!
     var isActive = false
     var player: AVAudioPlayer?
+    var logo = UIImage(named: "header-logo01")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +28,8 @@ class ViewController: UIViewController {
         individualTimerLabel.text = "\(formatTimeLabels(time: TimeInterval(individualTime)))"
 
         groupTimerLabel.text = "\(formatTimeLabels(time: TimeInterval(groupTime)))"
+        
+        logoView.image = logo
         
     }
     

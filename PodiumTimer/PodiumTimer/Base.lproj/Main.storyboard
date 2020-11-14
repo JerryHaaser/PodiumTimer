@@ -31,6 +31,14 @@
                                     <action selector="gStartButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Paf-tD-z2S"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erc-xL-4GT">
+                                <rect key="frame" x="152" y="665.5" width="74" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="gResetButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ev8-lA-YWs"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avm-t4-xnk">
                                 <rect key="frame" x="189" y="665.5" width="74" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
@@ -57,19 +65,21 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erc-xL-4GT">
-                                <rect key="frame" x="152" y="665.5" width="74" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Reset"/>
-                                <connections>
-                                    <action selector="gResetButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ev8-lA-YWs"/>
-                                </connections>
-                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="m3R-sl-QEw">
+                                <rect key="frame" x="104" y="10" width="300" height="300"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="1mR-4I-mVu"/>
+                                    <constraint firstAttribute="width" secondItem="m3R-sl-QEw" secondAttribute="height" multiplier="1:1" id="4Ng-sn-w40"/>
+                                    <constraint firstAttribute="height" constant="300" id="wAb-1R-bgr"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Bif-Fn-bSp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Det-rf-Aee"/>
                             <constraint firstItem="avm-t4-xnk" firstAttribute="top" secondItem="EqA-MS-yZh" secondAttribute="bottom" constant="20" id="HtZ-vn-ySG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="m3R-sl-QEw" secondAttribute="trailing" constant="10" id="LgN-EU-Eqg"/>
                             <constraint firstItem="nia-yS-JZR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OPQ-Am-jv0"/>
                             <constraint firstItem="EqA-MS-yZh" firstAttribute="centerX" secondItem="ew9-xQ-yCG" secondAttribute="centerX" id="RcU-6h-ABc"/>
                             <constraint firstItem="EqA-MS-yZh" firstAttribute="top" secondItem="ew9-xQ-yCG" secondAttribute="bottom" constant="30" id="U49-nG-jn4"/>
@@ -82,12 +92,14 @@
                             <constraint firstItem="1OF-qx-kfF" firstAttribute="centerX" secondItem="Bif-Fn-bSp" secondAttribute="centerX" id="rtC-ZI-WGE"/>
                             <constraint firstItem="erc-xL-4GT" firstAttribute="top" secondItem="1OF-qx-kfF" secondAttribute="bottom" constant="20" id="y4c-tj-Wue"/>
                             <constraint firstItem="nia-yS-JZR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yFT-eV-ygf"/>
+                            <constraint firstItem="m3R-sl-QEw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="10" id="zzj-Yi-63S"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="groupTimerLabel" destination="Bif-Fn-bSp" id="mqf-q0-RNu"/>
                         <outlet property="individualTimerLabel" destination="ew9-xQ-yCG" id="Lg0-dq-BGg"/>
+                        <outlet property="logoView" destination="m3R-sl-QEw" id="Kpo-vd-8fk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
