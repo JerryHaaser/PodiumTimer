@@ -17,6 +17,7 @@
 		1C7D11B1255B7FF300457D95 /* PodiumTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7D11B0255B7FF300457D95 /* PodiumTimerTests.swift */; };
 		1C7D11BC255B7FF300457D95 /* PodiumTimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7D11BB255B7FF300457D95 /* PodiumTimerUITests.swift */; };
 		1C7D129D255F718400457D95 /* Tiny Frog-SoundBible.com-1771194786.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1C7D129C255F718400457D95 /* Tiny Frog-SoundBible.com-1771194786.mp3 */; };
+		1C7D129F2560735600457D95 /* analog-watch-alarm_daniel-simion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1C7D129E2560735600457D95 /* analog-watch-alarm_daniel-simion.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		1C7D11BB255B7FF300457D95 /* PodiumTimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodiumTimerUITests.swift; sourceTree = "<group>"; };
 		1C7D11BD255B7FF300457D95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C7D129C255F718400457D95 /* Tiny Frog-SoundBible.com-1771194786.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Tiny Frog-SoundBible.com-1771194786.mp3"; sourceTree = "<group>"; };
+		1C7D129E2560735600457D95 /* analog-watch-alarm_daniel-simion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "analog-watch-alarm_daniel-simion.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				1C7D129C255F718400457D95 /* Tiny Frog-SoundBible.com-1771194786.mp3 */,
+				1C7D129E2560735600457D95 /* analog-watch-alarm_daniel-simion.mp3 */,
 				1C7D1196255B7FF200457D95 /* AppDelegate.swift */,
 				1C7D1198255B7FF200457D95 /* SceneDelegate.swift */,
 				1C7D119A255B7FF200457D95 /* ViewController.swift */,
@@ -242,6 +245,7 @@
 				1C7D11A6255B7FF300457D95 /* LaunchScreen.storyboard in Resources */,
 				1C7D11A3255B7FF300457D95 /* Assets.xcassets in Resources */,
 				1C7D119E255B7FF200457D95 /* Main.storyboard in Resources */,
+				1C7D129F2560735600457D95 /* analog-watch-alarm_daniel-simion.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

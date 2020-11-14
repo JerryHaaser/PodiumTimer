@@ -16,53 +16,57 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EqA-MS-yZh">
-                                <rect key="frame" x="96" y="532" width="34" height="30"/>
+                                <rect key="frame" x="194.5" y="597.5" width="63" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
                                     <action selector="iStartButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I3U-Fl-nC7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1OF-qx-kfF">
-                                <rect key="frame" x="284.5" y="532" width="34" height="30"/>
+                                <rect key="frame" x="157.5" y="597.5" width="63" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
                                     <action selector="gStartButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Paf-tD-z2S"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avm-t4-xnk">
-                                <rect key="frame" x="93.5" y="582" width="39" height="30"/>
+                                <rect key="frame" x="189" y="665.5" width="74" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Reset"/>
                                 <connections>
                                     <action selector="iResetButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZEc-5e-u7Y"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ew9-xQ-yCG">
-                                <rect key="frame" x="20" y="394.5" width="185.5" height="107.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="90"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
+                                <rect key="frame" x="20" y="328.5" width="412" height="239"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="200"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bif-Fn-bSp">
-                                <rect key="frame" x="209" y="394.5" width="185" height="107.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="90"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
+                                <rect key="frame" x="-16.5" y="328.5" width="410.5" height="239"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="200"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="|" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nia-yS-JZR">
-                                <rect key="frame" x="190.5" y="388" width="33" height="120"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
+                                <rect key="frame" x="174.5" y="328.5" width="65" height="239"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="200"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erc-xL-4GT">
-                                <rect key="frame" x="282" y="582" width="39" height="30"/>
+                                <rect key="frame" x="152" y="665.5" width="74" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Reset"/>
                                 <connections>
                                     <action selector="gResetButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ev8-lA-YWs"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Bif-Fn-bSp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Det-rf-Aee"/>
                             <constraint firstItem="avm-t4-xnk" firstAttribute="top" secondItem="EqA-MS-yZh" secondAttribute="bottom" constant="20" id="HtZ-vn-ySG"/>

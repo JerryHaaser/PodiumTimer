@@ -52,7 +52,7 @@ class ViewController: UIViewController {
             timer.invalidate()
             individualTime = 180
             isActive = true
-            soundTrigger()
+            stopSoundTriger()
             individualTimerLabel.textColor = .red
             
         }
@@ -61,7 +61,9 @@ class ViewController: UIViewController {
     
     func resetIndividualTimer() {
         timer.invalidate()
-        individualTimerLabel.textColor = .black
+        individualTime = 180
+        individualTimerLabel.text = "\(formatTimeLabels(time: TimeInterval(individualTime)))"
+        individualTimerLabel.textColor = .white
         isActive = false
         player?.pause()
     }
@@ -73,28 +75,51 @@ class ViewController: UIViewController {
             timer.invalidate()
             groupTime = 300
             isActive = true
-            soundTrigger()
+            stopSoundTriger()
         }
         groupTimerLabel.text = "\(formatTimeLabels(time: TimeInterval(groupTime)))"
     }
     
     func resetGroupTimer() {
         timer.invalidate()
+        groupTime = 500
+        groupTimerLabel.text = "\(formatTimeLabels(time: TimeInterval(groupTime)))"
         groupTimerLabel.textColor = .black
         isActive = false
         player?.pause()
     }
     
-    func soundTrigger() {
-        if isActive == true {
-            playSound()
+    func startSoundTrigger() {
+        if isActive == false {
+            playStartSound()
         } else {
             //player?.pause()
         }
     }
     
-    func playSound() {
+    func stopSoundTriger() {
+        if isActive == true {
+            playStopSound()
+        } else {
+            //player?.pause()
+        }
+    }
+    
+    func playStartSound() {
         let path = Bundle.main.path(forResource: "Tiny Frog-SoundBible.com-1771194786.mp3", ofType: nil)!
+        let url = URL(fileURLWithPath: path)
+
+        do {
+            player = try AVAudioPlayer(contentsOf: url)
+            player?.numberOfLoops = 1
+            player?.play()
+        } catch {
+            print("Whoopsies")
+        }
+    }
+    
+    func playStopSound() {
+        let path = Bundle.main.path(forResource: "analog-watch-alarm_daniel-simion.mp3", ofType: nil)!
         let url = URL(fileURLWithPath: path)
 
         do {
@@ -109,6 +134,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func iStartButtonPressed(_ sender: Any) {
+        startSoundTrigger()
         startIndividualTimer()
     }
     @IBAction func iResetButtonPressed(_ sender: Any) {
